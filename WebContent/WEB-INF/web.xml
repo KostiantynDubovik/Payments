@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+    <display-name>ROOT</display-name>
+
+    <listener>
+        <listener-class>com.payments.web.listeners.ContextListener</listener-class>
+    </listener>
+
+    <servlet-mapping>
+        <servlet-name>default</servlet-name>
+        <url-pattern>*.css</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>default</servlet-name>
+        <url-pattern>*.jpg</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>default</servlet-name>
+        <url-pattern>*.png</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>default</servlet-name>
+        <url-pattern>*.js</url-pattern>
+    </servlet-mapping>
+
+
+
+    <servlet>
+        <servlet-name>Account</servlet-name>
+        <servlet-class>com.payments.web.servlets.user.AccountServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Account</servlet-name>
+        <url-pattern>/user</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DoPayment</servlet-name>
+        <servlet-class>com.payments.web.servlets.user.DoPaymentServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DoPayment</servlet-name>
+        <url-pattern>/user/pay</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ViewIncomingPayments</servlet-name>
+        <servlet-class>com.payments.web.servlets.user.ViewIncomingPaymentsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ViewIncomingPayments</servlet-name>
+        <url-pattern>/user/incoming_payments</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ViewOutgoingPayments</servlet-name>
+        <servlet-class>com.payments.web.servlets.user.ViewOutgoingPaymentsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ViewOutgoingPayments</servlet-name>
+        <url-pattern>/user/outgoing_payments</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ViewIncomingPayment</servlet-name>
+        <servlet-class>com.payments.web.servlets.user.ViewIncomingPaymentServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ViewIncomingPayment</servlet-name>
+        <url-pattern>/user/incoming_payment</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>ViewOutgoingPayment</servlet-name>
+        <servlet-class>com.payments.web.servlets.user.ViewOutgoingPaymentServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ViewOutgoingPayment</servlet-name>
+        <url-pattern>/user/outgoing_payment</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ViewBills</servlet-name>
+        <servlet-class>com.payments.web.servlets.user.ViewBillsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ViewBills</servlet-name>
+        <url-pattern>/user/bills</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ViewBill</servlet-name>
+        <servlet-class>com.payments.web.servlets.user.ViewBillServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ViewBill</servlet-name>
+        <url-pattern>/user/bills/bill</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>RefillBillServlet</servlet-name>
+        <servlet-class>com.payments.web.servlets.user.RefillBillServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RefillBillServlet</servlet-name>
+        <url-pattern>/user/refill</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>CreateNewBillServlet</servlet-name>
+        <servlet-class>com.payments.web.servlets.user.CreateNewBillServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CreateNewBillServlet</servlet-name>
+        <url-pattern>/user/new_bill</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ViewAllUserMoneyServlet</servlet-name>
+        <servlet-class>com.payments.web.servlets.user.ViewAllUserMoneyServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ViewAllUserMoneyServlet</servlet-name>
+        <url-pattern>/user/all_money</url-pattern>
+    </servlet-mapping>
+
+
+
+    <servlet>
+        <servlet-name>AdminPage</servlet-name>
+        <servlet-class>com.payments.web.servlets.admin.AdministrationServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AdminPage</servlet-name>
+        <url-pattern>/admin</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ManageUsers</servlet-name>
+        <servlet-class>com.payments.web.servlets.admin.ManageUsersServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ManageUsers</servlet-name>
+        <url-pattern>/admin/users</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ViewAllUsersMoneyServlet</servlet-name>
+        <servlet-class>com.payments.web.servlets.admin.ViewAllUsersMoneyServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ViewAllUsersMoneyServlet</servlet-name>
+        <url-pattern>/admin/users/all_money</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ManageBills</servlet-name>
+        <servlet-class>com.payments.web.servlets.admin.ManageBillsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ManageBills</servlet-name>
+        <url-pattern>/admin/bills</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ManageBill</servlet-name>
+        <servlet-class>com.payments.web.servlets.admin.ManageBillServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ManageBill</servlet-name>
+        <url-pattern>/admin/bills/bill</url-pattern>
+    </servlet-mapping>
+
+
+
+    <servlet>
+        <servlet-name>Register</servlet-name>
+        <servlet-class>com.payments.web.servlets.RegistrationServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Register</servlet-name>
+        <url-pattern>/register</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Login</servlet-name>
+        <servlet-class>com.payments.web.servlets.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Login</servlet-name>
+        <url-pattern>/login</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Logout</servlet-name>
+        <servlet-class>com.payments.web.servlets.LogoutServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Logout</servlet-name>
+        <url-pattern>/logout</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>Captcha</servlet-name>
+        <servlet-class>com.payments.web.servlets.CaptchaServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Captcha</servlet-name>
+        <url-pattern>/retrievedCaptcha-image.jpg</url-pattern>
+    </servlet-mapping>
+
+
+    <filter>
+        <filter-name>pageEncoding</filter-name>
+        <filter-class>com.payments.web.filters.CharsetFilter</filter-class>
+        <init-param>
+            <param-name>encoding</param-name>
+            <param-value>UTF-8</param-value>
+        </init-param>
+    </filter>
+    <filter-mapping>
+        <filter-name>pageEncoding</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+    <filter>
+        <filter-name>authFilter</filter-name>
+        <filter-class>com.payments.web.filters.AuthFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>authFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+    <jsp-config>
+        <taglib>
+            <taglib-uri>http://payments.com/jsp/tlds/myTag</taglib-uri>
+            <taglib-location>/WEB-INF/generateRndm.tld</taglib-location>
+        </taglib>
+    </jsp-config>
+
+    <welcome-file-list>
+        <welcome-file>login.jsp</welcome-file>
+    </welcome-file-list>
+
+</web-app>

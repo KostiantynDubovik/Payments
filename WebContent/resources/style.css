@@ -1,0 +1,151 @@
+aside {
+    background: #456a8e;
+    width: 30%;
+    float: left;
+    height: 100vh;
+    padding: 2em;
+}
+
+td.sidebar {
+    background: #456a8e;
+    width: 15vw;
+    vertical-align: top;
+    height: 100vh;
+}
+
+td.main_space {
+    vertical-align: top;
+}
+
+header {
+    background: #456a8e;
+    height: 80px;
+    padding: 0.5em;
+
+}
+
+body {
+    margin: 0;
+    background: #edeef0;
+}
+
+table.body_space {
+    border-collapse: collapse;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.credentials {
+    margin: 20px auto auto;
+}
+
+span.links {
+    color: #edeef0;
+
+}
+
+td.rightcol {
+    text-align: right;
+}
+
+span.links a:hover {
+    color: #cecfd1;
+}
+
+table.links {
+    margin-top: 0;
+    float: right;
+    border: 0;
+    border-spacing: 0;
+
+}
+
+.disabled_class{
+pointer-events: none; /* делаем элемент неактивным для взаимодействия */
+cursor: default; /*  курсор в виде стрелки */
+color: #888;/* цвет текста серый */
+}
+
+table.text {
+    width: 100%;
+    border-spacing: 0;
+}
+
+table.text td {
+    width: 50%;
+    vertical-align: middle;
+}
+
+table.product_frame_all {
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin: 0;
+    float: right;
+    right: 0;
+    top: 0;
+}
+
+table.nav_frame {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin: 0;
+    right: 0;
+    left: 0;
+}
+
+table.nav_frame tr, table.nav_frame td {
+    text-align: center;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+table.product_frame {
+    width: 100%;
+    height: 32ch;
+    margin: 3px;
+    border: solid #cecfd1 1px;
+    border-spacing: 0;
+}
+
+table.product_frame2 {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    border: none;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+td.photo {
+    width: 280px;
+    height: 280px;
+    max-width: 280px;
+    max-height: 280px;
+    border-spacing: 0;
+}
+
+td.photo2 {
+    width: 560px;
+    height: 560px;
+    max-width: 560px;
+    max-height: 560px;
+    border-spacing: 0;
+}
+td.photo3 {
+    width: 56px;
+    height: 56px;
+    max-width: 56px;
+    max-height: 56px;
+    border-spacing: 0;
+}
+
+td img {
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+}
+

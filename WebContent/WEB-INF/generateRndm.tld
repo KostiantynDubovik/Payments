@@ -1,0 +1,11 @@
+<taglib>
+    <description>Random Number Generator</description>
+    <jsp-version>1.0</jsp-version>
+    <tlib-version>2.1</tlib-version>
+    <short-name>Random Tag</short-name>
+    <tag>
+        <name>generateRndm</name>
+        <tag-class>com.payments.web.jstl.GenerateRandomValue</tag-class>
+        <body-content>empty</body-content>
+    </tag>
+</taglib>
